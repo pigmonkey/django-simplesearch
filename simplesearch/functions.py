@@ -14,7 +14,7 @@ def normalize_query(query_string):
     spaces and grouping quoted words together.
     """
     find_terms = re.compile(r'"([^"]+)"|(\S+)').findall
-    normalize_space = re.compile(r'\s{2,}').sub 
+    normalize_space = re.compile(r'\s{2,}').sub
 
     # Split the string into terms.
     terms = find_terms(query_string)
@@ -26,7 +26,7 @@ def normalize_query(query_string):
             if STOP_WORDS_RE.sub('', term[1]) is '':
                 del terms[index]
 
-    return [normalize_space(' ', (t[0] or t[1]).strip()) for t in terms] 
+    return [normalize_space(' ', (t[0] or t[1]).strip()) for t in terms]
 
 
 def get_query(query_string, search_fields):
