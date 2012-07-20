@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name = 'django-simplesearch',
     packages = find_packages(),
-    version = '0.1',
+    version = '1.0',
     description = 'A basic search application for Django.',
     author = 'Julien Phalip, Peter Hogg',
     author_email = 'peter@havenaut.net',
