@@ -2,13 +2,19 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'django-simplesearch',
+    packages = find_packages(),
     version = '0.1',
     description = 'A basic search application for Django.',
-    long_description = open('README.md').read(),
+    author = 'Julien Phalip, Peter Hogg',
+    author_email = 'peter@havenaut.net',
     url = 'https://github.com/pigmonkey/django-simplesearch',
-    author = 'Pig Monkey',
-    author_email = 'pm@pig-monkey.com',
-
-    packages = find_packages(),
-    zip_safe=False,
+    classifiers = [
+        "Programming Language :: Python",
+        "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "Framework :: Django",
+    ],
+    long_description = open('README.md').read(),
+    include_package_data = True,
+    zip_safe=True,
 )
