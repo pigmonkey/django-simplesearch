@@ -10,6 +10,18 @@ How it Works
 A string of search terms are passed to the `get_query` function, along with a list of the model fields to search. These terms are normalized by `normalize_query`, which splits the query string into individual keyword, keeping quoted words together and removing [stop words](https://en.wikipedia.org/wiki/Stop_words). The `get_query` function then returns a [Q object](https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects) which may be used to search the given fields for the given term.
 
 
+Installation
+------------
+
+django-simplesearch is available on PyPI and can be installed with PIP.
+
+    pip install django-simplesearch
+
+Alternatively, you may download the source and install it.
+
+    python setup.py install
+
+
 Setup
 -----
 
